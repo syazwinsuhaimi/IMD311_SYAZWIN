@@ -1,0 +1,35 @@
+body
+
+a:link
+{
+    color: white;
+    background-color: black;
+    text-decoration: dashed;
+    padding: 15px;
+    display: inline-block;
+    font-family: Georgia;
+    border-radius: 8px;
+}
+
+a:visited
+{
+    color: hotpink;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 15px;
+
+}
+
+a:hover
+{
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active
+{
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+}

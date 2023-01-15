@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <style>
+            #date
+                {
+                  float: left;
+                  color: rgb(0, 0, 0);
+                  font-size: 20px;
+                  text-align: center;
+                  border:3px dashed #000000;
+                  padding:10px;
+                  width:150px;
+                  background-color: rgb(211, 104, 175);
+                }
+            #time
+                {
+                  float: right;
+                  text-align: center;
+                  font-size:20px;
+                  border:3px dashed #000000;
+                  padding:10px;
+                  width:100px;
+                  background-color: rgb(211, 104, 175);
+                }
+        </style>
+        <link rel="stylesheet" type="text/css" href="clock_style.css">
+        <script type="text/javascript">
+                window.onload = setInterval(clock,1000);
+               
+                function clock()
+                    {
+                var d = new Date();
+                     
+                var date = d.getDate();
+                     
+                var month = d.getMonth();
+                var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+                month=montharr[month];
+                     
+                var year = d.getFullYear();
+                     
+                var day = d.getDay();
+                var dayarr =["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+                day=dayarr[day];
+                     
+                var hour =d.getHours();
+                var min = d.getMinutes();
+                var sec = d.getSeconds();
+                   
+                document.getElementById("date").innerHTML=day+" "+date+" "+month+" "+year;
+                document.getElementById("time").innerHTML=hour+":"+min+":"+sec;
+                    }
+        </script>
+            <body>
+                <p id="date"></p>
+                <p id="time"></p>
+            </body>        
+        <title>My Homepage</title>
+        <p>
+            <style>
+            body {
+              background-image: url(image/background.jpg);
+              background-repeat: no-repeat;
+              background-attachment: fixed; 
+              background-size: 100% 100%;
+            }
+            </style>
+        </p>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <p>
+            <div style="text-align: center;">
+            <p><img src="image/uitm_logo-removebg-preview.png" width="400"></p>
+            <p><h1 style="font-size: 500%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>WELCOME TO MY HOMEPAGE</b></h1></p>
+            <a href="index.html"><img src="image/homepage button.png" width="170"></a>
+            <a href="biodata.html"><img src="image/biodata button.png" width="150"></a>
+            <a href="education.html"><img src="image/education button.png" width="170"></a>
+            <a href="experience.html"><img src="image/experience button.png" width="175"></a>
+            <a href="gallery.html"><img src="image/gallery button.png" width="145"></a>
+            <a href="contact.html"><img src="image/contact button.png" width="145"></a>
+            <img src="image/awin1-removebg-preview.png" alt="NURSYAZWIN IRDINA" width="250" hspace="40" vspace="10">
+            <img src="image/awin6-removebg-preview.png" alt="NURSYAZWIN IRDINA" width="230" hspace="40" vspace="10">
+            <img src="image/awin1-removebg-preview.png" alt="NURSYAZWIN IRDINA" width="250" hspace="40" vspace="10">
+            <img src="image/awin6-removebg-preview.png" alt="NURSYAZWIN IRDINA" width="230" hspace="40" vspace="10">
+            
+            <style>
+                table, th, td
+                {
+                    border: 3px solid rgb(0, 0, 0);
+                    border-style: double;
+                    background-color: plum;
+                    font-family: 'Courier New', Courier, monospace;
+                }
+                td
+                {
+                    text-align: left;
+                }
+                th, td
+                {
+                    padding: 20px;
+                }
+            </style>
+            <table style="width: 100%;">
+                <tr>
+                    <th>NAME</th>
+                    <td>NURSYAZWIN IRDINA BINTI SUHAIMI</td>
+                </tr>
+                <tr>
+                    <th>STUDENT ID</th>
+                    <td>2020607392</td>
+                </tr>
+                <tr>
+                    <th>CLASS</th>
+                    <td>N5IM1105A</td>
+                </tr>
+                <tr>
+                    <th>PROGRAMME CODE</th>
+                    <td>INTRODUCTION TO WEB CONTENT MANAGEMENT AND DESIGN (IMD311)</td>
+                </tr>
+                <tr>
+                    <th>LECTURER</th>
+                    <td>MADAM SERI INTAN IDAYU BINTI SHAHRUL ASARI</td>
+                </tr>
+            </table>
+            <audio autoplay>
+                <source src="audio/sound.ogg" type="audio/ogg">
+                <source src="audio/sound.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            </div>
+        </p>
+
+    </body>
+</html>
